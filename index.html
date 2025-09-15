@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Самостійна робота №1</title>
+    <link rel="icon" type="image/x-icon" href="3653045.png">
+    <style>
+        a:link {
+            color: rgb(16, 83, 61);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: palevioletred;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+            text-decoration: underline;
+
+        }
+
+        body {
+            background-image: url('tablets-and-capsules.jpg');
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        table {
+            border-spacing: 10px;
+        }
+
+        th, td {
+            background-color: #96D4D4;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 20px;
+        }
+        td {
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        td:nth-child(odd) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>My first title</h1>
+<p style="font-family:courier;">my first paragraph</p><br>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+<h2>Посилання: </h2>
+<a href="https://map.ukrainealarm.com/">is it safe now?</a><br>
+<a href="https://www.youtube.com/">YouTube</a>
+<div>
+    <h2>Зображення:</h2>
+    <img src="3653045.png"
+         alt="rose"
+         width="120"
+         height="120"><br>
+
+    <img src="IMG_0196.PNG" width="569" height="380" alt="clinic" usemap="#clinic">
+    <map name="clinic">
+        <area shape="rect" coords="284, 95, 480, 150" alt="clinic name"
+        href="https://github.com/iatan33/IA-33_appWEB-PigolTanya-FIOT-2025">
+        <area shape="rect" coords="400, 180, 540, 300" alt="coffeeshop"
+        href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+</div><br>
+<picture>
+    <source media="(min-width: 650px)" srcset="manypills.jpg">
+    <source media="(min-width: 465px)" srcset="lesspills.jpg" width="300" height="200">
+    <img src="tablets-and-capsules.jpg">
+</picture>
+<br>
+<h2>Таблиці:</h2>
+<table style="width:100%">
+    <caption>графік роботи</caption>
+    <colgroup>
+        <col span="2" style="background-color: beige">
+    </colgroup>
+    <thead>
+    <tr style="height:100px">
+        <th style="width:40%" colspan="2">День тижня</th>
+        <th>Години роботи</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Понеділок</td>
+        <td rowspan="5">всі лікарі</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Вівторок</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Середа</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Четвер</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>П'ятниця</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Субота</td>
+        <td rowspan="2">чергові лікарі</td>
+        <td>9:00 - 20:00</td>
+    </tr>
+    <tr>
+        <td>Неділя</td>
+        <td>9:00 - 20:00</td>
+    </tr>
+    </tbody>
+</table><br>
+<h2>Списки:</h2>
+<ul style="list-style-type: circle">
+    <li>Консультація лікарів</li>
+    <li>Діагностика захворювань</li>
+    <li>Профілактичні огляди</li>
+    <li>Вакцинація</li>
+    <li>Лабораторні дослідження</li>
+    <li>Денний стаціонар</li>
+</ul>
+<br>
+<ol type="I">
+    <li>Кальченко Д.П</li>
+    <li>Руднєва М.М.</li>
+    <li>Марчкнко М.М.</li>
+</ol>
+<dl>
+    <dt>Ібупрофен</dt>
+    <dd>- це знеболюючий і жарознижувальний препарат.</dd>
+    <dt>Нурофен</dt>
+    <dd>- це нестероїдний протизапальний засіб</dd>
+</dl><br>
+<h2>Форми:</h2>
+<form action="/submit-form" method="post">
+    <h2>Оформити запис</h2>
+    <fieldset>
+        <legend>Особиста інформація:</legend>
+    <label for="name">Ваше ім'я:</label><br>
+    <input type="text" id="name" name="user_name"><br><br>
+
+    <label for="name">Ваше прізвище:</label><br>
+    <input type="text" id="surname" name="user_surname"><br><br>
+
+    <label for="email">Електронна пошта:</label><br>
+    <input type="email" id="email" name="user_email"><br><br>
+    </fieldset>
+    <label for="message">Ваша проблема:</label><br>
+    <textarea id="message" name="user_message" rows="4" cols="50"></textarea><br><br>
+
+    <label for="doctor_specialty">Виберіть спеціаліста:</label>
+    <input list="doctor_specialty">
+    <datalist id="doctor_specialty">
+        <option value="">Будь ласка, оберіть</option>
+        <option value="therapist">Терапевт</option>
+        <option value="dentist">Стоматолог</option>
+        <option value="pediatrician">Педіатр</option>
+        <option value="surgeon">Хірург</option>
+    </datalist><br><br>
+
+    <label>Чи бажаєте отримати нагадування про запис?</label><br>
+    <input type="checkbox" id="yes" name="subscribe" value="yes">
+    <label for="yes">Так</label><br>
+    <input type="checkbox" id="no" name="subscribe" value="no">
+    <label for="no">Ні</label><br><br>
+
+    <input type="submit" value="Підтвердити запис">
+    <button type="button" onclick="alert('форму очищено')">Очистити форму</button>
+</form><br>
+<form
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+    <input type="color" name="favcolor">
+</form>
+</body>
+</html>
